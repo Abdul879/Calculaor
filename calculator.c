@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+//Declaring functions
 int addOfTwoNumbers(int, int);
 int subOfTwoNumbers(int, int); 
 int mulOfTwoNumbers(int, int);
@@ -10,16 +10,17 @@ int menu();
 
 int main()
 {
+  // initilizing the variables
   int x, y,side;
   int add,sub,multiple,div,area;
   int choice;
-  
+  // open for loop for repeated iterations
   for(;;)
   {
     choice = menu();
     switch(choice)
     {
-     
+      // Taking inputs from the user
         case 1:
                 printf("\t\tEnter any Two Numbers: ");
                 scanf("\t\t%d+%d",&x,&y);
